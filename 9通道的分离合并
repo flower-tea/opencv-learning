@@ -20,4 +20,4 @@ cv2.imshow('bgr',bgr)
 cv2.imshow('bgr1',bgr1)
 cv2.waitKey(0)
 
-
+https://blog.csdn.net/youcans/article/details/121174740
