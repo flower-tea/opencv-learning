@@ -1,0 +1,23 @@
+##  2.摄像头的获取
+import cv2
+import numpy as np
+
+cv2.namedWindow('video',cv2.WINDOW_NORMAL)                   #建立窗口
+cv2.resizeWindow('video',640,480)                            #重置大小
+
+cap = cv2.VideoCapture(0)                                    #摄像头的选取，参数为摄像头的编号，详细参见设备管理器，摄像头的顺序
+                                                             #参数为0，1，2，…………   
+
+while True:
+    ret,frame =cap.read()                                    #获取视频帧，ret返回Ture代表打开成功
+    cv2.imshow('video',frame)
+   #获取视频帧的速度
+    key = cv2.waitKey(1)                                     #延时1ms切换到下一帧图像，等待键盘按键
+    if(key == 27 ):                                          #key对应ASCII码esc，退出循环
+        break
+cap.release()                                                #释放摄像头空间
+cv2.destroyAllWindows()
+
+
+
+
