@@ -1,0 +1,38 @@
+##   1.读取图片并建立窗口，以下为在vs中对于中文路径的读取图片，并不一定正确，请尝试纯英文路径读取
+# -*- encoding:gbk -*-
+------------------------------------------------------------------------------
+import cv2
+import numpy as np
+
+def imread(filepath):
+    img = cv2.imdecode(np.fromfile(filepath,dtype = np.uint8),-1)
+    return img
+
+
+cv2.namedWindow("img",cv2.WINDOW_AUTOSIZE)
+path = "C:\\Users\\某滑稽同学\\Desktop\\图\\2.jpg"
+image = imread(path)   
+while True:
+    key = cv2.waitKey(0)
+    if(key & 0xFF == ord('q')):
+        cv2.imshow("img",image)
+        cv2.waitKey(1000)
+        break
+    elif(key & 0xFF == ord('s')):
+        break
+cv2.destroyAllWindows() 
+-----------------------------------------------------------------------------
+##英文路径读取图片
+import cv2 
+wide = 640;high = 480 
+cv2.namedWindow('pic',cv2.WINDOW_NORMAL)       #创建名字为pic的窗口，类型为WINDOW_NORMAL
+cv2.resizeWindow('pic',wide,high)              #更改pic窗口，将其改为wide x high 大小
+img = cv2.imread('D:\\documents\\pic\\pic11.jpg')   #读取图片，使用英文路径，采用这种格式输入地址
+cv2.imshow('pic',img)
+while True:
+  key = cv2.waitkey(1)
+  if(key == ord)
+
+
+
+  

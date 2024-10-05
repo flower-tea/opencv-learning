@@ -1,7 +1,0 @@
-##第一部分：生成图像
----
-cv2.namedWindow('name',size(int))
-size = cv2.WINDOW_NORMAL
-cv2.resizeWindow('name',size)
-size = (x,y) or (wide,high)
----
