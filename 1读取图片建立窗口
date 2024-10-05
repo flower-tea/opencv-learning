@@ -22,16 +22,22 @@ while True:
         break
 cv2.destroyAllWindows() 
 -----------------------------------------------------------------------------
+
 ##英文路径读取图片
 import cv2 
 wide = 640;high = 480 
 cv2.namedWindow('pic',cv2.WINDOW_NORMAL)       #创建名字为pic的窗口，类型为WINDOW_NORMAL
 cv2.resizeWindow('pic',wide,high)              #更改pic窗口，将其改为wide x high 大小
+
 img = cv2.imread('D:\\documents\\pic\\pic11.jpg')   #读取图片，使用英文路径，采用这种格式输入地址
-cv2.imshow('pic',img)
+cv2.imshow('pic',img)                               #在pic窗口显示图片img
+
 while True:
-  key = cv2.waitkey(1)
-  if(key == ord)
+  key = cv2.waitkey(1)                              #等待按键获取API
+  if(key & 0xFF == ord('s')):
+     break                                          #按键s控制窗口的关闭，程序的结束
+
+cv2.destroyAllWindows()
 
 
 
