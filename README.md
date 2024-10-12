@@ -7,6 +7,6 @@
   - 场景：白色场地，可以为白纸，黑色遥控车，可以在白纸上随意运动。摄像头可以观测整个场地。
   - 要求：识别白纸上的黑色小车，将其在视频帧中使用矩形框出。在电脑上使用坐标纸，绘制出小车的运动轨迹
 ## 使用软件
-  本文采用Anaconda中的spyder软件进行实践，采用的python的opencv库进行项目的实现。当然也可以像视频中使用vscode。不过本人使用spyder更加的好看。下载方式为官网 https://www.anaconda.com。下载过程中注意，建议查看 [csdn](https://blog.csdn.net/qq_45281589/article/details/134597810)  下载完毕后
+  本文采用Anaconda中的spyder软件进行实践，采用的python的opencv库进行项目的实现。当然也可以像视频中使用vscode。不过本人使用spyder更加的好看。下载方式为官网 https://www.anaconda.com   下载过程中注意，建议查看  [csdn](https://blog.csdn.net/qq_45281589/article/details/134597810)  下载完毕后
   在软件里继续下载spyder，并在里面的Powershell Prompt中下载需要的固件库，opencv等，具体的可以看csdn。
   > 我摆了，看csdn多有用
